@@ -1,0 +1,156 @@
+/* Reset básico */
+body, h1, input, button {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Corpo */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Garante que o body ocupe toda a altura da tela */
+    position: relative;
+    color: white;
+}
+
+/* Sobreposição escura na imagem de fundo */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Cor preta com opacidade de 50% */
+    z-index: 1;
+}
+
+/* Imagem de fundo */
+body {
+    background: url('../assets/images/background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Contêiner do conteúdo */
+.home-container {
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;  /* Garante o posicionamento dentro do body */
+}
+
+/* Título com sombreamento */
+h1 {
+    font-size: 32px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+/* Exibição do nome do usuário na página home */
+#username-display {
+    font-weight: bold;
+    color: #6a11cb; /* Cor roxa para o nome do usuário */
+}
+
+/* Descrição do site */
+p {
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+/* Link para login ou logout */
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Formulário de login */
+.login-container {
+    background: rgba(255, 255, 255, 0.8); /* Fundo branco semi-transparente */
+    border-radius: 10px;
+    padding: 40px;
+    width: 350px;  /* Largura definida para o formulário */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para destacar o formulário */
+    z-index: 2;
+}
+
+/* Campos do formulário */
+.form-group {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background: #f5f5f5;
+    font-size: 16px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #6a11cb; /* Cor da borda ao focar no campo */
+    outline: none;
+    background: #eaeaea; /* Cor de fundo ao focar */
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(70, 90, 99, 0.6);
+    border: 2px solid black;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.6s ease-in-out;
+}
+
+button:hover {
+    background: rgba(36, 39, 56, 0.6);
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Botões específicos */
+
+/* Botão da tela inicial */
+.btn-home {
+    width: 200px;
+    padding: 12px;
+    font-size: 16px;
+}
+
+/* Botão da tela de login (menor) */
+.btn-login {
+    width: 150px;  
+    padding: 10px;  
+    font-size: 14px;  
+}

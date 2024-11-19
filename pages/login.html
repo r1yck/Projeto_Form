@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Login no SkateLink</h1>
+        <p>Entre para marcar seus rolês com outros skatistas!</p>
+        
+        <!-- Formulário de login -->
+        <div class="login-container">
+            <form id="form-login" class="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input required type="text" id="username" name="username" placeholder="Digite seu usuário">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input required type="password" id="password" name="password" placeholder="Digite sua senha">
+                </div>
+                
+                <!-- Botão específico para login -->
+                <button class="btn-login" type="submit">Entrar</button> <!-- Classe específica para o botão de login -->
+            </form>
+        </div>
+        
+        <!-- Link para cadastro -->
+        <p>Não tem uma conta? <a href="./cadastro.html">Cadastre-se</a></p>
+    </div>
+
+    <script src="../js/login.js"></script> <!-- Certifique-se de que este arquivo está incluído -->
+</body>
+</html>

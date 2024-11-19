@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - SkateLink</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="home-container">
+        <h1>Cadastrar Conta no SkateLink</h1>
+        <p>Crie sua conta e comece a marcar rolês com outros skatistas!</p>
+        
+        <!-- Formulário de cadastro -->
+        <div class="login-container">
+            <form id="form-register" class="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input required type="text" id="username" name="username" placeholder="Escolha um nome de usuário">
+                </div>
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input required type="password" id="password" name="password" placeholder="Digite sua senha">
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">Confirmar Senha</label>
+                    <input required type="password" id="confirm-password" name="confirm-password" placeholder="Confirme sua senha">
+                </div>
+                
+                <button type="submit">Registrar</button>
+            </form>
+        </div>
+        
+        <!-- Link para login -->
+        <p>Já tem uma conta? <a href="./login.html">Faça login</a></p>
+    </div>
+
+    <script src="../js/cadastro.js"></script>
+</body>
+</html>
