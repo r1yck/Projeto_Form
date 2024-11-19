@@ -53,13 +53,6 @@
 3. **Interaja com o site**:
     - Acesse a página de **Cadastro**, registre um usuário, faça o login e seja saudado na página inicial.
 
-## Estrutura de Arquivos
-
-/skatelink │ ├── index.html # Página de boas-vindas com links para login e cadastro ├── login.html # Página de login ├── cadastro.html # Página de cadastro de novo usuário ├── home.html # Página inicial, onde o nome do usuário é exibido ├── css/ │ └── styles.css # Arquivo de estilos para todas as páginas └── js/ ├── login.js # Lógica de login, verificando dados no localStorage ├── cadastro.js # Lógica de cadastro, armazenando dados no localStorage └── home.js # Lógica de exibição do nome do usuário logado
-
-markdown
-Copiar código
-
 ## Como Funciona o Cadastro e Login
 
 - **Cadastro**: Quando um novo usuário se registra, o nome de usuário e a senha são armazenados no **`localStorage`** do navegador. O sistema verifica se o nome de usuário já existe antes de criar um novo.
